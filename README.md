@@ -17,6 +17,10 @@ Den wählst du aus und in dem neuen Fenster suchst du das Bild des DHT11 aus ode
 Nachdem du auf das Bild geklickt hast, wird die Bibiliothek eingebunden.
 Nun müssen wir als erstes einstellen, an welchen Signal-Pin der Sensor angeschlossen wurde. Hierfür benuten wir aus den ``||DHT11: DHT11||``-Bereich den Block ``||DHT11: DHT11 an Pin C16||``. 
 
-```blocks
-DHT11.setPin(DigitalPin.C16)
-```
+## Schritt 2: Ausgabe vorbereiten
+Nun kümmern wir uns um die Ausgabe. Hierfür benötigen wir eine Anzeigefunkion (``||basic: zeige Text||``). 
+Außerdem nutzen wir aus dem Bereich ``||text:Text ||`` (welches wir im unter ``||advanced:Fortgeschritten ||`` finden) den Block ``||text:verbinde ||``, 
+da wir an den Messwert noch eine Einheit anhängen wollen. Die fügen wir gemeinsam in den Dauerhaft-Block ein.
+
+## Schritt 3: Messwert anzeigen
+Abschließend holen wir uns aus dem ``||DHT11:DHT11 ||``-Bereich die beiden Messwerte (``||DHT11: prozentuale Luftfeuchtigkeit||`` und ``||DHT11: Temperatur in °C||``) und schieben Sie in den vorderen Bereich der Verbinde-Funktion.
