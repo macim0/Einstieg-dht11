@@ -20,27 +20,5 @@ Nun müssen wir als erstes einstellen, an welchen Signal-Pin der Sensor angeschl
 DHT11.setPin(DigitalPin.C16)
 ```
 
-## Schritt 2: Ausgabe vorbereiten
-Nun kümmern wir uns um die Ausgabe. Hierfür benötigen wir eine Anzeigefunkion (``||basic: zeige Text||``). 
-Außerdem nutzen wir aus dem Bereich ``||text:Text ||`` (welches wir im unter ``||advanced:Fortgeschritten ||`` finden) den Block ``||text:verbinde ||``, 
-da wir an den Messwert noch eine Einheit anhängen wollen. Die fügen wir gemeinsam in den Dauerhaft-Block ein.
-```blocks
-DHT11.setPin(DigitalPin.C16)
-basic.forever(function () {
-    basic.showString(" " + "%")
-    basic.showString(" " + "C")
-})
-```
-
-## Schritt 3: Messwert anzeigen
-Abschließend holen wir uns aus dem ``||DHT11:DHT11 ||``-Bereich die beiden Messwerte (``||DHT11: prozentuale Luftfeuchtigkeit||`` und ``||DHT11: Temperatur in °C||``) und schieben Sie in den vorderen Bereich der Verbinde-Funktion.
-```blocks
-DHT11.setPin(DigitalPin.C16)
-basic.forever(function () {
-    basic.showString("" + DHT11.humidity() + "%")
-    basic.showString("" + DHT11.temperature() + "C")
-})
-```
-
 
 
