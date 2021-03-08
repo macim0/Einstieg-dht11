@@ -16,3 +16,7 @@ Den wählst du aus und in dem neuen Fenster suchst du das Bild des DHT11 aus ode
 Den wählst du aus und in dem neuen Fenster suchst du das Bild des DHT11 aus oder suchst ihn indem du es oben ein Suchfeld eingibst. 
 Nachdem du auf das Bild geklickt hast, wird die Bibiliothek eingebunden.
 Nun müssen wir als erstes einstellen, an welchen Signal-Pin der Sensor angeschlossen wurde. Hierfür benuten wir aus den ``||DHT11: DHT11||``-Bereich den Block ``||DHT11: DHT11 an Pin C16||``. 
+
+```blocks
+DHT11.setPin(DigitalPin.C16)
+```
