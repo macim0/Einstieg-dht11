@@ -1,7 +1,7 @@
 # DHT11 Einführung
 ## ~avatar avatar @unplugged
 
-Dies ist eine Einführung für das Verwenden des ``||DHT11:DHT11 ||`` mit dem @boardname@. 
+Dies ist eine Einführung für das Verwenden des ``||DHT11:DHT11 ||``. 
 
 
 ## ~ @unplugged
